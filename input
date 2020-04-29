@@ -1,0 +1,5 @@
+print('Who do you think I am')
+input('Please write here：')
+print('Guess my age')
+input('Your age is :')
+print('Oh,yes!')
