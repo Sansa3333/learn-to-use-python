@@ -1,0 +1,45 @@
+
+# 1 字符串拼接练习
+name = 'Crossin'
+age = 18
+code = 'Python'
+result= "%s is %d, he writes %s" % (name, age, code)  # 注意元组内部有逗号
+print(result)
+
+# 2 print
+num1 = '3.3'
+num2 = 2.5
+# 将 num1 转换为浮点数
+num1 = float(num1)
+# 再和 num2 相加后输出
+print(num1+num2)
+
+# 3 bool类型转化
+print(bool(-123))  # True
+print(bool(0)) # False
+print(bool('abc')) # True
+print(bool('False')) # True
+print(bool('')) # False
+print(bool([])) # False
+print(bool({})) # False
+print(bool([''])) # True
+print(bool(None)) # False
+
+
+
+# note
+## 1 ##字符串
+# \ 被称作转义字符，除了用来表示引号('I\'m a \"good\" teacher') ，还有比如用
+# \n 表示字符串中的换行（相当于按一下回车键的效果）
+# \t 表示字符串中的制表符（相当于按一下tab键的效果）
+# \\ 表示字符串中的 \ （因为单个斜杠被用来做转义了，所以真的要表示 \ 字符，就要两个斜杠）
+# \ 还有个用处，就是用来在代码中换行，而不影响输出的结果
+# 在三个引号中，你可以方便地使用单引号和双引号，并且可以直接换行
+## 2 ## 格式化
+# %d 整数; %.2f 小数(.2 指位数); %s 字符
+# int(x)把x转换成整数;float(x) 把x转换成浮点数;str(x)把x转换成字符串;bool(x)把x转换成bool值
+## 3 ## bool 转换--认为False
+# (1)为0的数字，包括0，0.0 (2)空字符串，包括''，""
+# (3)表示空值的 None(4)空集合，包括()，[]，{}
+# 其他的值都认为是True。
+
