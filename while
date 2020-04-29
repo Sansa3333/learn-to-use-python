@@ -1,0 +1,40 @@
+# 1. 猜数字小游戏
+answer = 33
+
+while True:
+    num = int(input("猜猜数字是多少?"))
+    if answer > num:
+        print("输入的数字较小")
+        continue
+    if answer < num:
+        print("输入的数字较大")
+        continue
+    if answer == num:
+        print("您猜对了！")
+        break
+# 2. 输出 1 到 10，但不输出 4 和 5
+
+count = 0
+while count<10:
+    count +=1
+    if count ==4:
+        continue
+    if count ==5:
+        continue
+    
+    print(count)
+# 3 使用 while 计算100以内所有3的倍数的和（即：计算3、6、9 ... 96、99 的和）
+sum=0
+num=0
+while num < 100:
+    num+=1
+    if num % 3 == 0:
+        continue
+    sum+=num
+print(sum)
+
+
+# note:
+# 1. 注意while是整个循环的判断 
+        
+    
