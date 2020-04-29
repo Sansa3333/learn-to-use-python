@@ -1,0 +1,17 @@
+# 1 输出变量
+a=input('请猜一个数字：')
+print("你输入的数字是：" ,a )  #注意print变量要加逗号
+## ? 如何跳出程序？
+
+# 2 变量计算
+money = 20
+# 将 money 变量的值乘以 2 再加上 50，赋值给 result
+result = money*2+50
+print(result)
+
+# 3 变量类型
+a = 'hello,world'   # 字符型
+b = 1.414     #浮点
+c = (1 != 2)  # bool False
+d = (True and False)  #False
+e = (True or False)   #True
