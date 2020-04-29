@@ -18,7 +18,8 @@ for i in range(a):
 
 for i in range(a):
     for j in range(b):
-        print("*")    # ？？ 如何能够分开两行，分别显示
+        print("*",end=' ') 
+        print()       # ？？ 分开两行，分别显示
 
 # 3. 输出九九乘法口诀表
 for i in range(1,10):
