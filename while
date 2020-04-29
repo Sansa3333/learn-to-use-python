@@ -19,16 +19,19 @@ while count<10:
     count +=1
     if count ==4:
         continue
-    if count ==5:
-        continue
-    
+    if count ==5:     
+        continue    
     print(count)
+    
+    # 可以合并为一句f count ==5 or count ==4:
+    
+    
 # 3 使用 while 计算100以内所有3的倍数的和（即：计算3、6、9 ... 96、99 的和）
 sum=0
 num=0
 while num < 100:
     num+=1
-    if num % 3 == 0:
+    if num % 3 != 0:
         continue
     sum+=num
 print(sum)
