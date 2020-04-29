@@ -1,0 +1,53 @@
+# 1 if 条件判断
+money = 88
+if money > 100:
+    print("rich")
+
+# 2 逻辑判断
+## a  True
+bingo = False
+if bingo == False:
+    print(True)
+else:
+    print(False)
+    
+## b ?  False
+b = 3
+if b - 3:
+    print(True)
+else:
+    print(False)
+    
+## c ? 输入值时为True，不输入（回车时）为False
+x = input('请输入内容')
+if x:
+    print(True)
+else:
+    print(False)
+    
+## d
+a = True
+b = not a  
+print(b)   #False
+print(not b)  # True
+print(a == b) #False
+print(a != b)  # True
+print(a and b) #False
+print(a or b)  # True
+print(1<2 and b==True)  #False
+
+# 3 BMI 计算器
+a=float(input('欢迎来到BMI指数计算器 /n 请输入您的身高(m)：'))
+b=float(input('请输入您的体重(kg)：'))
+bmi = a/b*b
+if bmi <18.5:
+    print("您的BMI指数为%f,您的体重偏轻" % bmi)
+elif bmi>=24:
+    print("您的BMI指数为%f,您的体重偏重" % bmi)
+else:
+    print("您的BMI指数为%f,您的体重正常" % bmi)
+
+# tips：
+# 1 12 ** 2 # 求平方 ; 12 ** 0.5 # 求平方根
+# if a:  ---> if bool(a)==True
+
