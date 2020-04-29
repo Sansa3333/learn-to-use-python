@@ -10,8 +10,13 @@ result = money*2+50
 print(result)
 
 # 3 变量类型
-a = 'hello,world'   # 字符型
-b = 1.414     #浮点
-c = (1 != 2)  # bool False
-d = (True and False)  #False
-e = (True or False)   #True
+a = 'hello,world'   # 字符型 hello,world
+print(a)
+b = 1.414     #浮点 1.414
+print(b)
+c = (1 != 2)  # bool True
+print(c)
+d = (True and False)  # False
+print(d)
+e = (True or False)   # True
+print(e)
