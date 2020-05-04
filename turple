@@ -1,0 +1,26 @@
+# 1 # 字典
+# 创建一个字典，包含 one、two、three 三个键对应的值分别为 1，2，3
+data = {'one':1,'two':2,'three':3}
+# 将 two 键对应的值改为 4
+data['two']=4
+print(data)
+
+# 2 # 统计下这段文字里，不同单词出现的次数
+word_str='''
+Beautiful is better than ugly
+Explicit is better than implicit
+Simple is better than complex
+Complex is better than complicated
+Flat is better than nested
+Sparse is better than dense
+'''
+word_list = word_str.split()
+word_count={}
+#用字典储存不同单词及其出现数量
+for word in word_list:
+    if word in word_count:
+        word_count[word] +=1
+    else:
+        word_count[word]  = 1
+print(word_count)
+    
