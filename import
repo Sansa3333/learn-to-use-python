@@ -1,0 +1,46 @@
+# note
+# 1 random模块
+# 引入1： from random import randint  randint(5,10)  y引入包括5到10的数字
+# 引入2： import random  num=random.randint(a,b)  生成【a-b】之间的随机数
+# random.uniform(a,b)生成浮点数 ; random.choice(seq)序列中随机选取元素
+# random.randrange(start, stop, step)从start到stop（不包括stop），间隔为step的一个随机数
+
+
+# practice
+# 1 # 计算圆面积
+# math 模块中的 pi 属性是圆周率π
+import math
+pi=math.pi
+# 圆面积式 S = π * r * r
+r = 20
+# 计算半径为 r 的圆面积
+S = pi*r*r
+print(S)
+
+# 2 # 生成10个随机数，输出里面最大的数
+import random
+count= 0
+num_list=[]
+for i in range(10):
+    one_num=random.randint(0,133)
+    num_list.append(one_num)
+print("生成10个随机数字：",num_list)
+print("10个随机数中，最大值为：", max(num_list))
+print("10个随机数中，最小值为：", min(num_list))
+# 3# 用一个1-100之间的随机数来改写，并在猜中后输出猜了几轮猜中答案
+import random
+answer = random.randint(1,100)
+count =0
+while True:
+    count+=1
+    num = int(input("猜猜数字是多少?"))
+    if answer > num:
+        print("输入的数字较小")
+        continue
+    if answer < num:
+        print("输入的数字较大")
+        continue
+    if answer == num:
+        print("您猜对了！")
+        break
+print('一共猜了%d猜中' % count)
